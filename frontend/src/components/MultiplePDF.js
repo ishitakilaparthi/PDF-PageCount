@@ -31,7 +31,7 @@ function MultiplePDF() {
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/process-folder',
+        `${API_URL}/api/process-folder`,
         formData,
         {
           headers: {
@@ -71,7 +71,7 @@ function MultiplePDF() {
   const handleExport = async () => {
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/export-excel',
+        `${API_URL}/api/export-excel`,
         {
           data: result,
           mode: 'multiple',

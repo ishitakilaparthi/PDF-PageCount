@@ -93,8 +93,9 @@ git push -u origin main
 4. Fill in the configuration:
    - **Name:** `pdf-counter-backend`
    - **Environment:** Node
+   - **Root Directory:** `backend` (IMPORTANT!)
    - **Build Command:** `npm install`
-   - **Start Command:** `node backend/server.js`
+   - **Start Command:** `node server.js`
    - **Branch:** main
    - **Instance Type:** Free (default)
 
