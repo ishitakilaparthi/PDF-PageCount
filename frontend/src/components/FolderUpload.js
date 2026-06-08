@@ -3,6 +3,8 @@ import { FiUploadCloud } from 'react-icons/fi';
 import axios from 'axios';
 import ResultsDisplay from './ResultsDisplay';
 
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 function FolderUpload() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);

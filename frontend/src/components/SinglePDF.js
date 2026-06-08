@@ -3,6 +3,8 @@ import { FiUploadCloud, FiDownload } from 'react-icons/fi';
 import axios from 'axios';
 import ResultsDisplay from './ResultsDisplay';
 
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 function SinglePDF() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
@@ -24,7 +26,6 @@ function SinglePDF() {
     formData.append('file', file);
 
     try {
-      const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
       const response = await axios.post(
         `${API_URL}/api/upload-pdf`,
         formData,
