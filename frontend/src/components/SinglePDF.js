@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FiUploadCloud, FiDownload } from 'react-icons/fi';
+import { FiUploadCloud } from 'react-icons/fi';
 import axios from 'axios';
 import ResultsDisplay from './ResultsDisplay';
 
